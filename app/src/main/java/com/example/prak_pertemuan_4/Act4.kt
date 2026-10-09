@@ -30,3 +30,20 @@ import androidx.compose.ui.unit.sp
 fun ActivitasPertama(modifier: Modifier = Modifier) {
 
     Column(
+        modifier = modifier
+            .padding(top = 100.dp)
+            .fillMaxSize(),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+
+        Text(
+            text = stringResource(id = R.string.prodi),
+            fontSize = 35.sp,
+            fontWeight = FontWeight.Bold
+        )
+
+        Text(
+            text = stringResource(id = R.string.univ),
+            fontSize = 20.sp
+        )
+
