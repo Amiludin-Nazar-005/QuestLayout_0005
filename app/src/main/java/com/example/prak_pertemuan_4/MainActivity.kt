@@ -20,28 +20,10 @@ class MainActivity : ComponentActivity() {
         setContent {
             Prak_pertemuan_4Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    ActivitasPertama(Modifier.padding(paddingValues = innerPadding))
                 }
             }
         }
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    Prak_pertemuan_4Theme {
-        Greeting("Android")
-    }
-}
