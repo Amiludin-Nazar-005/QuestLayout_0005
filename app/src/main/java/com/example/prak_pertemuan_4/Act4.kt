@@ -100,4 +100,3 @@ fun ActivitasPertama(modifier: Modifier = Modifier) {
             }
         }
 
-        B
